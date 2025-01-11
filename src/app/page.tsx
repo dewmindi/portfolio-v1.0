@@ -1,4 +1,7 @@
 import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import FooterSection from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -13,6 +16,8 @@ export default function Home() {
       <Projects/>
       <Tape/>
       <About/>
+      <Contact/>
+      <FooterSection/>
     </div>
   );
 }

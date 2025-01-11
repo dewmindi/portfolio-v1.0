@@ -94,12 +94,12 @@ const ProjectsSection = () => {
                                                     View Live Site
                                             </button>
                                     </a>    
+                                </div>
+                                <div className='relative'>
+                                    <Image src={project.image} alt={project.title} width={500} height={300} 
+                                    className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:w-auto lg:h-full lg:max-w-none'/>
+                                </div>
                             </div>
-                            <div className='relative'>
-                                <Image src={project.image} alt={project.title} width={500} height={300} 
-                                className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:w-auto lg:h-full lg:max-w-none'/>
-                            </div>
-                        </div>
                     </div>
                 ))}
             </div>

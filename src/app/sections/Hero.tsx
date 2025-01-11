@@ -2,13 +2,15 @@
 import React from 'react';
 import { Vortex } from '../components/ui/vortex';
 import { VortexDemo } from '../components/ui/vortexdemo';
+import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 
 const HeroSection = () => {
   return (
     <div id='Home' className='mt-3 py-32 snap-start'> 
       <VortexDemo/>
-      <div className='flex justify-center items-center font-serif'>
-        <p className="text-white text-sm md:text-2xl max-w-xl text-center font-serif">Let's Discuss Your Next Project</p>
+      <div className='flex justify-center items-center font-serif'><TextGenerateEffect words={'Let\'s Discuss Your Next Project'}>
+      </TextGenerateEffect>
+        {/* <p className="text-white text-sm md:text-2xl max-w-xl text-center font-serif">Let's Discuss Your Next Project</p> */}
       </div>
       <div className='flex justify-center items-center'>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-3">

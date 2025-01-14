@@ -43,9 +43,10 @@ const AboutSection = () => {
     },
   ];
   return (
-    <section className='mt-10'>
+    <section id='about-me' className='py-16'>
+     <div className='container'> 
       <div className='md:grid md:grid-cols-2 md:gap-16'>
-        <div className='container text-white sm:mb-10'>
+        <div className=' text-white sm:mb-10'>
           <div className='flex justify-center'>
               <p className='upper font-semibold font-sans tracking-widest bg-gradient-to-r 
                  from-fuchsia-500 to-blue-700 text-center text-2xl md:text-3xl max-w-x bg-clip-text text-transparent'>
@@ -66,73 +67,21 @@ const AboutSection = () => {
           I enjoy tackling complex problems, learning new technologies, and creating impactful digital experiences that make a difference.
           </p>
         </div>
-        <div>
+        <div className=''>
           <div className='flex justify-center'>
               <p className='upper font-semibold font-sans tracking-widest bg-gradient-to-r 
                  from-fuchsia-500 to-blue-700 text-center text-2xl md:text-3xl max-w-x bg-clip-text text-transparent'>
                 Skills
               </p>
           </div>
-            <div>
+          <div>
               <HoverEffect items={items}/>
-            </div>
+          </div>
         </div>
+      </div>
       </div>
     </section>
   )
 };
 
 export default AboutSection
-
-// .about {
-//   background: #fafafa
-// }
-
-// .about__content {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 10rem
-// }
-
-// @media only screen and (max-width: 56.25em) {
-//   .about__content {
-//       grid-template-columns:1fr;
-//       grid-gap: 8rem
-//   }
-// }
-
-// .about__content-title {
-//   font-weight: 700;
-//   font-size: 2.8rem;
-//   margin-bottom: 3rem
-// }
-
-// @media only screen and (max-width: 37.5em) {
-//   .about__content-title {
-//       font-size:2.4rem
-//   }
-// }
-
-// .about__content-details-para {
-//   font-size: 1.8rem;
-//   color: #666;
-//   max-width: 60rem;
-//   line-height: 1.7;
-//   margin-bottom: 1rem;
-// }
-
-// .about__content-details-para--hl {
-//   font-weight: 700;
-//   margin: 0 3px
-// }
-
-// .about__content-details-para:last-child {
-//   margin-bottom: 4rem
-// }
-
-// .about__content-details-para a {
-//   text-decoration: underline;
-//   font-weight: 700;
-//   color: #7843E9;
-//   margin: 0 3px
-// }

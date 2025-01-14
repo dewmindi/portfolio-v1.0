@@ -6,7 +6,7 @@ import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 
 const HeroSection = () => {
   return (
-    <div id='Home' className='mt-3 py-32 snap-start'> 
+    <div id='home' className='mt-3 py-32 snap-start'> 
       <VortexDemo/>
       <div className='flex justify-center items-center font-serif'><TextGenerateEffect words={'Let\'s Discuss Your Next Project'}>
       </TextGenerateEffect>
@@ -14,12 +14,14 @@ const HeroSection = () => {
       </div>
       <div className='flex justify-center items-center'>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-3">
-          <button className="px-4 py-2 bg-gradient-to-r 
-             from-fuchsia-500 to-blue-700 hover:bg-gradient-to-l 
-             from-fuchsia-500 to-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-            Contact Now
-          </button>
-          <button className="px-4 py-2  text-white ">Explore Projects</button>
+          <a href="#contact">
+            <button className="px-4 py-2 bg-gradient-to-r 
+               from-fuchsia-500 to-blue-700 hover:bg-gradient-to-l 
+              from-fuchsia-500 to-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+              Contact Now
+            </button>
+          </a>
+          <a href="#projects"><button className="px-4 py-2  text-white ">Explore Projects</button></a>
         </div>
       </div>
     </div>

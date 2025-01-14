@@ -48,7 +48,7 @@ const portfolioProjects =[
 
 const ProjectsSection = () => {
   return (
-    <section className='pb-16'>
+    <section id='projects' className='pb-20'>
         <div>
             <div className='text-white container'>
                 <div className='flex justify-center'> 
@@ -60,10 +60,11 @@ const ProjectsSection = () => {
                 <h2 className='font-serif text-3xl text-center mt-6'>Featured Projects</h2>
                 <p className='text-center md:text-lg text-white/60 mt-4 max-w-md mx-auto '>Dive into see how I create concepts into web & mobile applications</p>
             <div className='flex flex-col gap-20 mt-10 md:mt-15'>
-                {portfolioProjects.map((project)=>(
-                        <div key={project.title} className='bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10
+                {portfolioProjects.map((project, projectIndex)=>(
+                        <div key={project.title} className='bg-gray-800 rounded-3xl z-0 overflow-hidden after:z-10
                             after:content-[\] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 
-                            after:rounded-3xl after:outline-white/50 px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 after:pointer-events-none'>
+                            after:rounded-3xl after:outline-white/50 px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 after:pointer-events-none sticky'
+                            style={{top:`calc(64px + ${projectIndex*40}px)`}}>
                             <div className='absolute inset-0 -z-10 opacity-5'>
                                 <img className='h-full w-full' src='/assets/grain1.jpg'></img>
                             </div>

@@ -29,7 +29,7 @@ const FooterSection = () => {
             <div className='absolute inset-x-0 bottom-0 h-[400px] bg-fuchsia-500/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10'></div>
             <div className='container text-white'>
                 <div className='border-t border-white/15 py-6 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8'>
-                    <div className='text-white/40'>&copy; 2025. All rights reserved.</div>
+                    <div className='text-white/40'>&copy; 2025 Umeshika Dewmindi | All rights reserved.</div>
                     <nav className='flex flex-col md:flex-row items-center gap-8'>
                         {footerLinks.map(link => (
                             <a
@@ -45,13 +45,13 @@ const FooterSection = () => {
                     </nav>
                 </div>  
             </div>
-            <div className='pr-12 pt-6'>
+            {/* <div className='pr-12 pt-6'>
                 <a href="#header">
                 <button className='w-10 h-6 rounded bg-transparent text-white border border-white text-center text-lg'>
                    ^
                 </button>
                 </a>
-            </div>
+            </div> */}
         </footer>
     );
 };

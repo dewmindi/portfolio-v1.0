@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { cn } from "../../../../lib/utils";
 
 interface VortexProps {
+  // eslint-disable-next-line @typescript-eslint/o-explicit-any
   children?: any;
   className?: string;
   containerClassName?: string;

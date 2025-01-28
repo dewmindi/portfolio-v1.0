@@ -80,10 +80,10 @@ const ProjectsSection = () => {
                                     </div>
                                     <h3 className='font-serif text-2xl mt-2 md:mt-5 md:text-4xl'>{project.title}</h3>
                                     <hr className='border-t-2 border-white/15 mt-4 md:mt-5'/>
-                                    <ul className='flex flex-col gap-4 mt-4' key={project.title}>
-                                            {project.results.map(result=>(
+                                    <ul className='flex flex-col gap-4 mt-4'>
+                                            {project.results.map((result, resultIndex)=>(
                                                 <span className='inline-flex gap-2 font-mono text-sm md:text-base
-                                                     text-white/65'>
+                                                     text-white/65' key={resultIndex} >
                                                     <span>&bull;</span>
                                                     <span><li>{result.title}</li></span>
                                                 </span>

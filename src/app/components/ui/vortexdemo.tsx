@@ -1,12 +1,11 @@
 import React from "react";
 import { Vortex } from "../ui/vortex";
-import Header from "@/app/sections/Header";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
 import Image from "next/image";
 
 export function VortexDemo() {
-    const [text, count] = useTypewriter({
+    const [text] = useTypewriter({
         words:[
             "< Web Developer />", 
             "< Mobile Developer />", 
@@ -18,15 +17,17 @@ export function VortexDemo() {
   return (
     <div className="w-full mx-auto rounded-md  h-[30rem] overflow-hidden py-32">
       <Vortex
-        backgroundColor="black"
+        backgroundColor=""
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       > 
         <div>
             <BackgroundCircle/>
-            <img 
-                className="relative items-center rounded-full h-40 w-40 mx-auto opacity-75" 
-                src="/assets/myImage.jpeg" 
-                alt="My Image" 
+            <Image
+                className="relative items-center rounded-full h-40 w-40 mx-auto opacity-90" 
+                src="/assets/myImage4.png" 
+                alt="My Image"
+                width={500} // Replace with your desired width
+                height={300} 
             />
         </div>
         <p className="text-white text-2xl md:text-3xl max-w-xl mt-6 text-center font-serif">

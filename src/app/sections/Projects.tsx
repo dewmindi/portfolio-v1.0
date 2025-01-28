@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 
-const saas1 = '/assets/saas1.jpg';
+const HighwayBus = '/assets/HighwayBus.png';
 const saas2 = '/assets/saas2.png';
 const saas3 = '/assets/saas3.png';
 
@@ -17,7 +17,7 @@ const portfolioProjects =[
             {title:"Increase mobile traffic"}
         ],
         link: "https://youtu.be/4kIdSLxh6w",
-        image: saas1,
+        image: HighwayBus,
     },
     {
         comapany: "Yolo",

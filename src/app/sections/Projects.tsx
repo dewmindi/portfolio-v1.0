@@ -2,46 +2,46 @@ import React from 'react'
 import Image from 'next/image';
 
 const HighwayBus = '/assets/HighwayBus.png';
-const saas2 = '/assets/saas2.png';
-const saas3 = '/assets/saas3.png';
+const PetPal = '/assets/PetPal.png';
+const TaxiTrack = '/assets/TaxiTrack.png';
 
 
 const portfolioProjects =[
     {
-        comapany: "Axcito",
+        comapany: "Umeshika Dewmindi&copy;",
         year: "2024",
-        title: "Dark Saas Landing Page",
+        title: "E-Book Highway Bus Reservation System",
         results: [
-            {title:"Enhance UX by 40%"},
-            {title:"Improve website speed by 50%"},
-            {title:"Increase mobile traffic"}
+            {title:"Seamless E-ticketing"},
+            {title:"Facilitate Real-Time Seat Status"},
+            {title:"Manage bookings efficiently"}
         ],
-        link: "https://youtu.be/4kIdSLxh6w",
+        link: "https://github.com/dewmindi/Highway-Bus-Reservation-System",
         image: HighwayBus,
     },
     {
-        comapany: "Yolo",
+        comapany: "Umeshika Dewmindi&copy;",
         year: "2024",
-        title: "Responsive Web app for Axcito",
+        title: "Pet-Pal Mobile Application",
         results: [
-            {title:"Enhance UX by 40%"},
-            {title:"Improve website speed by 50%"},
-            {title:"Increase mobile traffic"}
+            {title:"Streamline PetCare in a Finger tip"},
+            {title:"Track pets' Status"},
+            {title:"Set Reminders for Medications,foods"}
         ],
-        link: "https://youtu.be/4kIdSLxh6w",
-        image: saas2,
+        link: "https://youtu.https://github.com/dewmindi/pet-app/4kIdSLxh6w",
+        image: PetPal,
     },
     {
-        comapany: "Tour Lanka",
+        comapany: "Umeshika Dewmindi&copy;",
         year: "2024",
-        title: "Redesign tourLanka web",
+        title: "Taxi-Track| Manage Your Business",
         results: [
-            {title:"Enhance UX by 40%"},
-            {title:"Improve website speed by 50%"},
-            {title:"Increase mobile traffic"}
+            {title:"Track Routes of Every Trips"},
+            {title:"Manage Trips,Drivers & Requests Efficiently"},
+            {title:"View Income Graphically"}
         ],
         link: "https://youtu.be/4kIdSLxh6w",
-        image: saas3,
+        image: TaxiTrack,
     }
 ];
 
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
                                     <a href="{project.link}">
                                             <button className='bg-white h-12 w-full md:w-auto px-6 rounded-xl
                                                  text-black font-semibold mt-8'>
-                                                    View Live Site
+                                                    View Code
                                             </button>
                                     </a>    
                                 </div>

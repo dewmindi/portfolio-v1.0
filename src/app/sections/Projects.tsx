@@ -4,7 +4,6 @@ import Image from 'next/image';
 const saas1 = '/assets/saas1.jpg';
 const saas2 = '/assets/saas2.png';
 const saas3 = '/assets/saas3.png';
-const grainImage = '/assets/grain1.jpg';
 
 
 const portfolioProjects =[

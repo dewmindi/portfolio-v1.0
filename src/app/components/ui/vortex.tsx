@@ -153,6 +153,7 @@ export const Vortex = (props: VortexProps) => {
     particleProps[i4] = vy;
     particleProps[i5] = life;
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     (checkBounds(x, y, canvas) || life > ttl) && initParticle(i);
   };
 
@@ -185,6 +186,7 @@ export const Vortex = (props: VortexProps) => {
 
   const resize = (
     canvas: HTMLCanvasElement,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     ctx?: CanvasRenderingContext2D
   ) => {
     const { innerWidth, innerHeight } = window;

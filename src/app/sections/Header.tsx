@@ -7,7 +7,7 @@ const HeaderSection = () => {
             <a href="#home" className="nav-item">Home</a>
             <a href="#projects" className="nav-item">Projects</a>
             <a href="#about-me" className="nav-item">About Me</a>
-            <a href="#contact" className="nav-item bg-white text-gray-900">Let's Talk</a>
+            <a href="#contact" className="nav-item bg-white text-gray-900">Let&apos;s Talk</a>
         </nav>
     </div>
   )

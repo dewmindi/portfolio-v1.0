@@ -1,8 +1,6 @@
-import { ArrowUpward, ArrowUpwardOutlined, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
-import ArrowUpwardRounded from '@mui/icons-material/ArrowUpwardRounded';
-import { Icon } from '@mui/material';
+import {GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 import React from 'react';
-import { HoverBorderGradient } from '../components/ui/hover-border-gradient';
+
 
 const footerLinks = [
     {

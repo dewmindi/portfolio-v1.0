@@ -2,7 +2,7 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 const Typewritter = () => {
-    const [text, count] = useTypewriter({
+    const [text] = useTypewriter({
         words:[
             "< Umeshika Dewmindi />",
             "< Web Developer />", 

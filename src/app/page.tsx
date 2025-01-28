@@ -1,6 +1,5 @@
 import About from "./sections/About";
 import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
 import FooterSection from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";

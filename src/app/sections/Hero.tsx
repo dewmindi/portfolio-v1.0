@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import { Vortex } from '../components/ui/vortex';
 import { VortexDemo } from '../components/ui/vortexdemo';
 import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 

@@ -1,8 +1,7 @@
 "use client"
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import { FlipWords } from '../components/ui/flip-words';
-import { HoverBorderGradient } from '../components/ui/hover-border-gradient';
-import { EmailOutlined, LocationCityOutlined, LocationOn, PhoneAndroidOutlined } from '@mui/icons-material';
+import { EmailOutlined, LocationOn, PhoneAndroidOutlined } from '@mui/icons-material';
 import { useForm, SubmitHandler } from "react-hook-form";
 
 
@@ -17,8 +16,6 @@ const ContactSection = () => {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:udewmindi.ud@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
@@ -38,8 +35,8 @@ const ContactSection = () => {
             </div>
             <div className='mt-4'>
               <span className='flex items-center justify-center'>
-                <span className='text-center font-medium font-sans md:text-lg lg:text-2xl '>Whether you have a project idea, a question, or just want to connect,
-                  I'm here to help. Let's bring your vision to
+                <span className='text-center font-medium font-sans md:text-lg lg:text-2xl '>Whether you have a project idea&lsquo; a question&lsquo; or just want to connect&lsquo;
+                  I&apos;m here to help. Let&apos;s bring your vision to
                   <span>
                     <FlipWords words={['life', 'reality']}></FlipWords>
                   </span>

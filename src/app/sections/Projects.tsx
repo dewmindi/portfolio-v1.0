@@ -8,7 +8,7 @@ const TaxiTrack = '/assets/TaxiTrack.png';
 
 const portfolioProjects =[
     {
-        comapany: "Umeshika Dewmindi&copy;",
+        comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "E-Book Highway Bus Reservation System",
         results: [
@@ -20,7 +20,7 @@ const portfolioProjects =[
         image: HighwayBus,
     },
     {
-        comapany: "Umeshika Dewmindi&copy;",
+        comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "Pet-Pal Mobile Application",
         results: [
@@ -32,7 +32,7 @@ const portfolioProjects =[
         image: PetPal,
     },
     {
-        comapany: "Umeshika Dewmindi&copy;",
+        comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "Taxi-Track| Manage Your Business",
         results: [

@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 
-const HighwayBus = '/assets/HighwayBus.png';
-const PetPal = '/assets/PetPal.png';
+const HighwayBus = '/assets/HighwayBus1.png';
+const PetPal = '/assets/PetPal1.png';
 const TaxiTrack = '/assets/TaxiTrack.png';
+const AutoGrader = '/assets/AutoGrader.png'
 
 
 const portfolioProjects =[
@@ -42,6 +43,18 @@ const portfolioProjects =[
         ],
         link: "https://youtu.be/4kIdSLxh6w",
         image: TaxiTrack,
+    },
+    {
+        comapany: "Umeshika Dewmindi",
+        year: "2024",
+        title: "AutoGrader | AI Powered Grading System",
+        results: [
+            {title:"AI-driven assessment grader"},
+            {title:"Contextual understanding powered by machine learning algorithms"},
+            {title:"Incorporates Natural Language Processing (NLP"}
+        ],
+        link: "https://github.com/dewmindi/autoGrader-v-1",
+        image: AutoGrader,
     }
 ];
 
@@ -88,7 +101,7 @@ const ProjectsSection = () => {
                                                 </span>
                                             ))}
                                     </ul>
-                                    <a href="{project.link}">
+                                    <a href={project.link}>
                                             <button className='bg-white h-12 w-full md:w-auto px-6 rounded-xl
                                                  text-black font-semibold mt-8'>
                                                     View Code

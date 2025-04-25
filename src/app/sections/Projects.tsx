@@ -18,7 +18,7 @@ const portfolioProjects =[
             {title:"Enhanced User Experience"},
             // {title:""}
         ],
-        link: "https://pulsex-gaming.vercel.app",
+        link: "https://pixelx-gaming.vercel.app",
         image: PixelX,
     },
     {

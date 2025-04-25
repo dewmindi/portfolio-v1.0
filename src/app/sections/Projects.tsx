@@ -5,9 +5,34 @@ const HighwayBus = '/assets/HighwayBus1.png';
 const PetPal = '/assets/PetPal1.png';
 const TaxiTrack = '/assets/TaxiTrack.png';
 const AutoGrader = '/assets/AutoGrader.png'
+const PixelX = '/assets/PixelX.png'
 
 
 const portfolioProjects =[
+    {
+        comapany: "Umeshika Dewmindi",
+        year: "2024",
+        title: "PixelX | Dominate The Game",
+        results: [
+            {title:"ParallalX Animation"},
+            {title:"Enhanced User Experience"},
+            // {title:""}
+        ],
+        link: "https://pulsex-gaming.vercel.app",
+        image: PixelX,
+    },
+    {
+        comapany: "Umeshika Dewmindi",
+        year: "2024",
+        title: "AutoGrader | AI Powered Grading System",
+        results: [
+            {title:"AI-driven assessment grader"},
+            {title:"Contextual understanding powered by machine learning algorithms"},
+            {title:"Incorporates Natural Language Processing (NLP"}
+        ],
+        link: "https://github.com/dewmindi/autoGrader-v-1",
+        image: AutoGrader,
+    },
     {
         comapany: "Umeshika Dewmindi",
         year: "2024",
@@ -43,18 +68,6 @@ const portfolioProjects =[
         ],
         link: "https://youtu.be/4kIdSLxh6w",
         image: TaxiTrack,
-    },
-    {
-        comapany: "Umeshika Dewmindi",
-        year: "2024",
-        title: "AutoGrader | AI Powered Grading System",
-        results: [
-            {title:"AI-driven assessment grader"},
-            {title:"Contextual understanding powered by machine learning algorithms"},
-            {title:"Incorporates Natural Language Processing (NLP"}
-        ],
-        link: "https://github.com/dewmindi/autoGrader-v-1",
-        image: AutoGrader,
     }
 ];
 
@@ -101,16 +114,16 @@ const ProjectsSection = () => {
                                                 </span>
                                             ))}
                                     </ul>
-                                    <a href={project.link}>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
                                             <button className='bg-white h-12 w-full md:w-auto px-6 rounded-xl
                                                  text-black font-semibold mt-8'>
-                                                    View Code
+                                                    View Demo
                                             </button>
                                     </a>    
                                 </div>
                                 <div className='relative'>
                                     <Image src={project.image} alt={project.title} width={500} height={300} 
-                                    className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:w-auto lg:h-full lg:max-w-none'/>
+                                    className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:w-auto lg:h-full  w-full h-auto object-contain'/>
                                 </div>
                             </div>
                     </div>

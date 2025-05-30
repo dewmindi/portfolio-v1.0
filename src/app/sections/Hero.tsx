@@ -16,7 +16,7 @@ const HeroSection = () => {
           <a href="#contact">
             <button className="px-4 py-2 bg-gradient-to-r 
                from-fuchsia-500 to-blue-700 hover:bg-gradient-to-l 
-              from-fuchsia-500 to-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+              transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
               Contact Now
             </button>
           </a>

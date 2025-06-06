@@ -6,7 +6,7 @@ const PetPal = '/assets/PetPal1.png';
 const TaxiTrack = '/assets/TaxiTrack.png';
 const AutoGrader = '/assets/AutoGrader.png'
 const PixelX = '/assets/PixelX.png'
-const Hakeem = '/assets/Hakeem-Portfolio'
+const Hakeem = '/assets/Hakeem-Portfolio.png'
 
 
 const portfolioProjects =[

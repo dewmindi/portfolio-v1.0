@@ -7,9 +7,23 @@ const TaxiTrack = '/assets/TaxiTrack.png';
 const AutoGrader = '/assets/AutoGrader.png'
 const PixelX = '/assets/PixelX.png'
 const Hakeem = '/assets/Hakeem-Portfolio.png'
+const Darshan = '/assets/darshan.png'
 
 
 const portfolioProjects =[
+        {
+        comapany: "Darshan Rajendran",
+        year: "2025",
+        title: "Lawyer Darshan | Personal Portfolio",
+        results: [
+            {title:"Modern Looking Responsive Website"},
+            {title:"Dark & Light Theme"},
+            {title:"Enhanced User Experience"},
+            // {title:""}
+        ],
+        link: "https://www.lawyerdarshan.com.au/",
+        image: Darshan,
+        },    
         {
         comapany: "Hakeem Ahmed",
         year: "2025",

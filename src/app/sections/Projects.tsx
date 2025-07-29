@@ -12,7 +12,7 @@ const Darshan = '/assets/darshan.png'
 
 const portfolioProjects =[
         {
-        comapany: "Darshan Rajendran",
+        comapany: "Website by Dew_mindi",
         year: "2025",
         title: "Lawyer Darshan | Personal Portfolio",
         results: [
@@ -25,7 +25,7 @@ const portfolioProjects =[
         image: Darshan,
         },    
         {
-        comapany: "Hakeem Ahmed",
+        comapany: "Website by Dew_mindi",
         year: "2025",
         title: "Hakeem Ahmed | Personal Portfolio",
         results: [
@@ -38,7 +38,7 @@ const portfolioProjects =[
         image: Hakeem,
     },
     {
-        comapany: "Umeshika Dewmindi",
+        comapany: "Website by Dew_mindi",
         year: "2024",
         title: "PixelX | Dominate The Game",
         results: [
@@ -145,7 +145,7 @@ const ProjectsSection = () => {
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                                             <button className='bg-white h-12 w-full md:w-auto px-6 rounded-xl
                                                  text-black font-semibold mt-8'>
-                                                    View Demo
+                                                    View Live Site
                                             </button>
                                     </a>    
                                 </div>

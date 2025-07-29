@@ -24,7 +24,7 @@ export function VortexDemo() {
             <BackgroundCircle/>
             <Image
                 className="relative items-center rounded-full h-40 w-40 mx-auto opacity-90" 
-                src="/assets/myImage4.png" 
+                src="/assets/profileImgPortfolio.jpeg" 
                 alt="My Image"
                 width={500} // Replace with your desired width
                 height={300} 

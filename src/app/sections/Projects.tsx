@@ -1,20 +1,68 @@
 import React from 'react'
 import Image from 'next/image';
+import { title } from 'process';
+import { span } from 'framer-motion/client';
 
 const HighwayBus = '/assets/HighwayBus1.png';
 const PetPal = '/assets/PetPal1.png';
 const TaxiTrack = '/assets/TaxiTrack.png';
-const AutoGrader = '/assets/AutoGrader.png'
-const PixelX = '/assets/PixelX.png'
-const Hakeem = '/assets/Hakeem-Portfolio.png'
-const Darshan = '/assets/darshan.png'
+const AutoGrader = '/assets/AutoGrader.png';
+const PixelX = '/assets/PixelX.png';
+const Hakeem = '/assets/Hakeem-Portfolio.png';
+const Darshan = '/assets/darshan.png';
+const Meta = '/assets/csmetaui.png';
+const fourzero = '/assets/fourui2.png';
+const DreamCoach = '/assets/DreamCoach.png';
 
 
 const portfolioProjects =[
         {
+        comapany: "Four096",
+        year: "2025",
+        title: "Four096 | Company Portfolio",
+        techStack:["Next Js","Tailwind CSS","Aceternity UI"],
+        results: [
+            {title:"Modern, Responsive Website"},
+            {title:"Enhanced User Experience"},
+            // {title:""}
+        ],
+        link: "http://four096.vercel.app/",
+        image: fourzero,
+        },
+        {
+        comapany: "CS Graphic Meta",
+        year: "2025",
+        title: "CS Graphic Meta | E-Commerce Website",
+        techStack:["Next Js","Tailwind CSS","Aceternity UI","MongoDB","Stripe"],
+        results: [
+            {title:"Responsive Design"},
+            {title:"User-Friendly Navigation"},
+            {title:"Streamlined Checkout"},
+            {title:"Inventory Management"}
+        ],
+        link: "http://csgraphicmeta.com.au/",
+        image: Meta,
+        },  
+        {
+        comapany: "Dream Coach Lines", 
+        year: "2025",
+        title: "Dream Coach Lines | Canada Based Tourism Website",
+        techStack:["JavaScript","Bootstrap","Tailwind CSS","Firebase","Stripe"],
+        results: [
+            {title:"Booking System Integration"},
+            {title:"Responsive Design"},
+            {title:"User-Friendly Navigation"},
+            {title:"Detailed Destination & Tour Pages"},
+            {title:"Inventory Management"}
+        ],
+        link: "https://dreamcoachlines.com/",
+        image: DreamCoach,
+        },               
+        {
         comapany: "Website by Dew_mindi",
         year: "2025",
         title: "Lawyer Darshan | Personal Portfolio",
+        techStack:["Next Js","Tailwind CSS","Aceternity UI"],
         results: [
             {title:"Modern Looking Responsive Website"},
             {title:"Dark & Light Theme"},
@@ -28,6 +76,7 @@ const portfolioProjects =[
         comapany: "Website by Dew_mindi",
         year: "2025",
         title: "Hakeem Ahmed | Personal Portfolio",
+        techStack:["Next Js","Tailwind CSS","Aceternity UI"],
         results: [
             {title:"Modern Looking Responsive Website"},
             {title:"Dark & Light Theme"},
@@ -41,6 +90,7 @@ const portfolioProjects =[
         comapany: "Website by Dew_mindi",
         year: "2024",
         title: "PixelX | Dominate The Game",
+        techStack:["Next Js","Tailwind CSS","GSAP","Aceternity UI"],
         results: [
             {title:"ParallalX Animation"},
             {title:"Enhanced User Experience"},
@@ -53,6 +103,7 @@ const portfolioProjects =[
         comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "AutoGrader | AI Powered Grading System",
+        techStack:["NextJs","Python","MongoDB","Firebase"],
         results: [
             {title:"AI-driven assessment grader"},
             {title:"Contextual understanding powered by machine learning algorithms"},
@@ -65,6 +116,7 @@ const portfolioProjects =[
         comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "E-Book Highway Bus Reservation System",
+        techStack:["PHP","MySQL","Bootstrap"],
         results: [
             {title:"Seamless E-ticketing"},
             {title:"Facilitate Real-Time Seat Status"},
@@ -77,6 +129,7 @@ const portfolioProjects =[
         comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "Pet-Pal Mobile Application",
+        techStack:["Flutter","Dart","Firebase","Firestore"],
         results: [
             {title:"Streamline PetCare in a Finger tip"},
             {title:"Track pets' Status"},
@@ -89,6 +142,7 @@ const portfolioProjects =[
         comapany: "Umeshika Dewmindi",
         year: "2024",
         title: "Taxi-Track| Manage Your Business",
+        techStack:["JavaScript","Bootstrap 5"],
         results: [
             {title:"Track Routes of Every Trips"},
             {title:"Manage Trips,Drivers & Requests Efficiently"},
@@ -132,6 +186,9 @@ const ProjectsSection = () => {
                                         </div>
                                     </div>
                                     <h3 className='font-serif text-2xl mt-2 md:mt-5 md:text-4xl'>{project.title}</h3>
+                                    <h3 className='text-xs font-mono mt-4 space-x-4'>{project.techStack.map((id)=>(
+                                        <span>{id} |</span>
+                                    ))}</h3>
                                     <hr className='border-t-2 border-white/15 mt-4 md:mt-5'/>
                                     <ul className='flex flex-col gap-4 mt-4'>
                                             {project.results.map((result, resultIndex)=>(

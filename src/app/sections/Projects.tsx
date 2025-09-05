@@ -1,7 +1,5 @@
 import React from 'react'
 import Image from 'next/image';
-import { title } from 'process';
-import { span } from 'framer-motion/client';
 
 const HighwayBus = '/assets/HighwayBus1.png';
 const PetPal = '/assets/PetPal1.png';

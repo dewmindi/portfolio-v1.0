@@ -10,7 +10,7 @@ const Hakeem = '/assets/Hakeem-Portfolio.png';
 const Darshan = '/assets/darshan.png';
 const Meta = '/assets/csmetaui.png';
 const fourzero = '/assets/fourui2.png';
-const DreamCoach = '/assets/DreamCoach.png';
+// const DreamCoach = '/assets/DreamCoach.png';
 
 
 const portfolioProjects =[
@@ -40,21 +40,6 @@ const portfolioProjects =[
         ],
         link: "http://csgraphicmeta.com.au/",
         image: Meta,
-        },  
-        {
-        comapany: "Dream Coach Lines", 
-        year: "2025",
-        title: "Dream Coach Lines | Canada Based Tourism Website",
-        techStack:["JavaScript","Bootstrap","Tailwind CSS","Firebase","Stripe"],
-        results: [
-            {title:"Booking System Integration"},
-            {title:"Responsive Design"},
-            {title:"User-Friendly Navigation"},
-            {title:"Detailed Destination & Tour Pages"},
-            {title:"Inventory Management"}
-        ],
-        link: "https://dreamcoachlines.com/",
-        image: DreamCoach,
         },               
         {
         comapany: "Website by Dew_mindi",

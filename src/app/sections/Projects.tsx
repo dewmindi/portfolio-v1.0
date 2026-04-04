@@ -27,20 +27,20 @@ const portfolioProjects =[
         link: "http://four096.vercel.app/",
         image: fourzero,
         },
-        {
-        comapany: "CS Graphic Meta",
-        year: "2025",
-        title: "CS Graphic Meta | E-Commerce Website",
-        techStack:["Next Js","Tailwind CSS","Aceternity UI","MongoDB","Stripe"],
-        results: [
-            {title:"Responsive Design"},
-            {title:"User-Friendly Navigation"},
-            {title:"Streamlined Checkout"},
-            {title:"Inventory Management"}
-        ],
-        link: "http://csgraphicmeta.com.au/",
-        image: Meta,
-        },               
+        // {
+        // comapany: "CS Graphic Meta",
+        // year: "2025",
+        // title: "CS Graphic Meta | E-Commerce Website",
+        // techStack:["Next Js","Tailwind CSS","Aceternity UI","MongoDB","Stripe"],
+        // results: [
+        //     {title:"Responsive Design"},
+        //     {title:"User-Friendly Navigation"},
+        //     {title:"Streamlined Checkout"},
+        //     {title:"Inventory Management"}
+        // ],
+        // link: "http://csgraphicmeta.com.au/",
+        // image: Meta,
+        // },               
         {
         comapany: "Website by Dew_mindi",
         year: "2025",

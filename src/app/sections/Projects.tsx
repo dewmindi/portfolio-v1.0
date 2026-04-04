@@ -8,7 +8,7 @@ const AutoGrader = '/assets/AutoGrader.png';
 const PixelX = '/assets/PixelX.png';
 const Hakeem = '/assets/Hakeem-Portfolio.png';
 const Darshan = '/assets/darshan.png';
-const Meta = '/assets/csmetaui.png';
+// const Meta = '/assets/csmetaui.png';
 const fourzero = '/assets/fourui2.png';
 // const DreamCoach = '/assets/DreamCoach.png';
 
@@ -156,7 +156,13 @@ const ProjectsSection = () => {
                             after:rounded-3xl after:outline-white/50 px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 after:pointer-events-none sticky'
                             style={{top:`calc(64px + ${projectIndex*40}px)`}}>
                             <div className='absolute inset-0 -z-10 opacity-5'>
-                                <img className='h-full w-full' src='/assets/grain1.jpg'></img>
+                                                                <Image
+                                                                    className='h-full w-full object-cover'
+                                                                    src='/assets/grain1.jpg'
+                                                                    alt=''
+                                                                    fill
+                                                                    aria-hidden='true'
+                                                                />
                             </div>
                             <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                                 <div className='lg:pb-16'>   

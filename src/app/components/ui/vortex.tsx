@@ -53,20 +53,6 @@ export const Vortex = (props: VortexProps) => {
   const lerp = (n1: number, n2: number, speed: number): number =>
     (1 - speed) * n1 + speed * n2;
 
-  const setup = () => {
-    const canvas = canvasRef.current;
-    const container = containerRef.current;
-    if (canvas && container) {
-      const ctx = canvas.getContext("2d");
-
-      if (ctx) {
-        resize(canvas, ctx);
-        initParticles();
-        draw(canvas, ctx);
-      }
-    }
-  };
-
   const initParticles = () => {
     tick = 0;
     // simplex = new SimplexNoise();
@@ -185,20 +171,6 @@ export const Vortex = (props: VortexProps) => {
     return x > canvas.width || x < 0 || y > canvas.height || y < 0;
   };
 
-  const resize = (
-    canvas: HTMLCanvasElement,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    ctx?: CanvasRenderingContext2D
-  ) => {
-    const { innerWidth, innerHeight } = window;
-
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
-
-    center[0] = 0.5 * canvas.width;
-    center[1] = 0.5 * canvas.height;
-  };
-
   const renderGlow = (
     canvas: HTMLCanvasElement,
     ctx: CanvasRenderingContext2D
@@ -227,14 +199,41 @@ export const Vortex = (props: VortexProps) => {
   };
 
   useEffect(() => {
-    setup();
-    window.addEventListener("resize", () => {
+    const resizeCanvas = (canvas: HTMLCanvasElement) => {
+      const { innerWidth, innerHeight } = window;
+      canvas.width = innerWidth;
+      canvas.height = innerHeight;
+      center[0] = 0.5 * canvas.width;
+      center[1] = 0.5 * canvas.height;
+    };
+
+    const setupCanvas = () => {
       const canvas = canvasRef.current;
-      const ctx = canvas?.getContext("2d");
-      if (canvas && ctx) {
-        resize(canvas, ctx);
+      const container = containerRef.current;
+      if (canvas && container) {
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+          resizeCanvas(canvas);
+          initParticles();
+          draw(canvas, ctx);
+        }
       }
-    });
+    };
+
+    const handleResize = () => {
+      const canvas = canvasRef.current;
+      if (canvas) {
+        resizeCanvas(canvas);
+      }
+    };
+
+    setupCanvas();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

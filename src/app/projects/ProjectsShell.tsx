@@ -7,7 +7,7 @@ import NavMenu from "../components/NavMenu";
 // menu. Only the left column (`children`) changes per page.
 export default function ProjectsShell({
   children,
-  video = "/project-page.MOV",
+  video = "https://res.cloudinary.com/dnbckmmju/video/upload/v1781895053/project-page_jdbvrx.mp4",
 }: {
   children: React.ReactNode;
   video?: string;

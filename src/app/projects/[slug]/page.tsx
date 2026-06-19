@@ -77,7 +77,7 @@ export default function ProjectDetailPage() {
       {/* Tagline */}
       <div className="max-w-md pr-4">
         <p className="text-base md:text-lg font-normal leading-[1.4] tracking-tight text-white/50">
-          A multidisciplinary design studio crafting bespoke digital experiences.
+          I build story-driven digital experiences that are visually stunning, technically robust, and strategically aligned with your business goals.
         </p>
       </div>
     </ProjectsShell>

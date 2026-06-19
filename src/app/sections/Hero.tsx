@@ -14,11 +14,14 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/portfolio-hero.jpeg"
-          alt="Hero Background"
+          src="https://res.cloudinary.com/dnbckmmju/image/upload/f_auto,q_auto/v1781894833/dewmindi-freelance-web-developer-near-colombo_rk0wha.webp"
+          alt="Freelance Web Developer near colombo"
           fill
           className="object-cover"
           priority
+          fetchPriority="high"
+          sizes="100vw"
+          quality={85}
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>

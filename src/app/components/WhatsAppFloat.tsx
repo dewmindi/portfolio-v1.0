@@ -9,10 +9,10 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-32 right-16 z-[200] group flex items-center gap-3"
+      className="fixed bottom-16 right-16 z-[200] group flex items-center gap-3"
     >
       {/* Tooltip */}
-      <span className="opacity-100 group-hover:opacity-100 transition-opacity duration-200 text-[11px] font-bold tracking-widest uppercase text-white bg-black/80 px-3 py-1.5 rounded whitespace-nowrap">
+      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-[11px] font-bold tracking-widest uppercase text-white bg-black/80 px-3 py-1.5 rounded whitespace-nowrap">
         Chat with me
       </span>
 

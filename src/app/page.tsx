@@ -10,13 +10,13 @@ import Tape from "./sections/Tape";
 export default function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero/>
-      <Projects/>
+      {/* <Projects/>
       <Tape/>
       <About/>
       <Contact/>
-      <FooterSection/>
+      <FooterSection/> */}
     </div>
   );
 }

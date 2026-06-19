@@ -1,28 +1,91 @@
 "use client"
-import React from 'react';
-import { VortexDemo } from '../components/ui/vortexdemo';
-import { TextGenerateEffect } from '../components/ui/text-generate-effect';
+import { useState } from 'react';
+import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { TransitionLink } from '../components/PageTransition';
+import ContactOverlay from '../components/ContactOverlay';
 
 const HeroSection = () => {
+  const [showContact, setShowContact] = useState(false);
+
+
   return (
-    <div id='home' className='mt-3 py-32 snap-start'> 
-      <VortexDemo/>
-      <div className='flex justify-center items-center font-serif'><TextGenerateEffect words={'Let\'s Discuss Your Next Project'}>
-      </TextGenerateEffect>
-        {/* <p className="text-white text-sm md:text-2xl max-w-xl text-center font-serif">Let's Discuss Your Next Project</p> */}
+    <div id='home' className='relative h-screen w-full overflow-hidden flex flex-col justify-between text-white uppercase font-sans tracking-tighter'>
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/portfolio-hero.jpeg"
+          alt="Hero Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
-      <div className='flex justify-center items-center'>
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-3">
-          <a href="#contact">
-            <button className="px-4 py-2 bg-gradient-to-r 
-               from-fuchsia-500 to-blue-700 hover:bg-gradient-to-l 
-              transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-              Contact Now
-            </button>
-          </a>
-          <a href="#projects"><button className="px-4 py-2  text-white ">Explore Projects</button></a>
+
+      {/* Top Section */}
+      <div className="flex justify-between items-start p-6 md:p-10 z-10">
+        <div className="flex gap-8 text-[10px] md:text-sm font-bold">
+          <TransitionLink href="/projects" className="hover:opacity-50 transition-opacity">Web Development</TransitionLink>
+          <TransitionLink href="/projects" className="hover:opacity-50 transition-opacity">Mobile App Development</TransitionLink>
+        </div>
+
+        <div className="flex gap-8 items-center text-[10px] md:text-sm font-bold">
+          <TransitionLink href="/projects" className="flex items-center gap-1 hover:opacity-50 transition-opacity">
+            <span>Projects</span>
+            <span className="text-[8px] align-top">08</span>
+          </TransitionLink>
+          <div className="flex items-center gap-1">
+            <span>Narrative</span>
+            <span className="text-[8px] align-top">03</span>
+          </div>
+        </div>
+
+        <div className="text-[10px] md:text-sm font-bold">
+          <button
+            onClick={() => setShowContact(true)}
+            className="hover:opacity-50 transition-opacity"
+          >
+            CONTACT
+          </button>
         </div>
       </div>
+
+      {/* Bottom Section */}
+      <div className="w-full p-6 md:p-10 z-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 items-end border-t border-white/20 pt-4">
+          <a href="#home" className="space-y-1 group">
+            <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">Home</h3>
+            <p className="text-[10px] md:text-xs opacity-60 normal-case">Main Landing</p>
+          </a>
+          <TransitionLink href="/projects" className="space-y-1 group">
+            <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">Projects</h3>
+            <p className="text-[10px] md:text-xs opacity-60 normal-case">Work Showcase</p>
+          </TransitionLink>
+          <TransitionLink href="/services" className="space-y-1 group">
+            <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">Services</h3>
+            <p className="text-[10px] md:text-xs opacity-60 normal-case">What I Offer</p>
+          </TransitionLink>
+          <a href="/about" className="space-y-1 group">
+            <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">About Me</h3>
+            <p className="text-[10px] md:text-xs opacity-60 normal-case">My Journey</p>
+          </a>
+          <a onClick={() => setShowContact(true)} className="space-y-1 relative group cursor-pointer">
+            <div className="absolute top-0 left-0 w-full h-[1px] -translate-y-[17px]" />
+            <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase text-orange-600">CONTACT ME</h3>
+            <p className="text-[10px] md:text-xs opacity-60 normal-case">Get in touch</p>
+            
+          </a>
+        </div>
+        <div className="mt-8 flex justify-between items-baseline">
+          <h1 className="text-3xl md:text-5xl font-black tracking-tighter">DewMindi</h1>
+        </div>
+      </div>
+
+      {/* Contact Overlay */}
+      <AnimatePresence>
+        {showContact && <ContactOverlay onClose={() => setShowContact(false)} />}
+      </AnimatePresence>
     </div>
   );
 };

@@ -12,6 +12,10 @@ const projects = [
   { name: "JR Global Pathways Consulting", slug: "jr-global-pathways", type: "WebApplication" },
 ];
 
+
+
+// then spread projectUrls into the returned array above
+
 export default function WebDevClient() {
   const { navigate } = usePageTransition();
 

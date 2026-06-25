@@ -1,7 +1,5 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://dewmindi.com";
-
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -9,7 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"], 
     },
-    sitemap: `${siteUrl}/sitemap.xml`,
-    host: siteUrl,
+    sitemap: 'https://dewmindi.com/sitemap.xml',
   };
 }

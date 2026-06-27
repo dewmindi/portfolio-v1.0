@@ -1,8 +1,8 @@
 export const featuredProjects = [
   {
     id: "1",
-    slug: "cyelon-herbs",
-    title: "Cyelon Herbs",
+    slug: "ceylon-herbs",
+    title: "Ceylon Herbs",
     description: "E commerce website for a premium herbal tea brand, featuring a clean design and smooth animations.",
     imageUrl: "/project1.jpg",
     link: "https://ceylonherbsltd.com/",
@@ -11,8 +11,8 @@ export const featuredProjects = [
   },
   {
     id: "2",
-    slug: "milano-cafe",
-    title: "Milano Cafe ",
+    slug: "milano-cafe-bar",
+    title: "Milano Cafe Bar",
     description: "Brand identity and website for a trendy cafe bar in Milan, showcasing a modern aesthetic and user-friendly interface.",
     imageUrl: "/project2.jpg",
     link: "https://milanocafebar.com.au/",
@@ -41,9 +41,9 @@ export const featuredProjects = [
   },
   {
     id: "5",
-    slug: "milano-cafe-bar",
-    title: "Milano Cafe Bar",
-    description: "Brand identity and website for a trendy cafe bar in Milan, showcasing a modern aesthetic and user-friendly interface.",
+    slug: "scuba-dive",
+    title: "Scuba Dive",
+    description: "Brand identity and website for a scuba diving company in Australia, showcasing a modern aesthetic and user-friendly interface.",
     imageUrl: "/project2.jpg",
     link: "https://scuba.dewmindi.online/",
     video: "/project-page4.MOV",
@@ -51,9 +51,9 @@ export const featuredProjects = [
   },
   {
     id: "6",
-    slug: "milano-cafe-bar-2",
-    title: "Scuba Dive School",
-    description: "Brand identity and website for a trendy cafe bar in Milan, showcasing a modern aesthetic and user-friendly interface.",
+    slug: "cygnus-cleaning",
+    title: "Cygnus Facilities",
+    description: "Brand identity and website for a cleaning company in Australia, showcasing a modern aesthetic and user-friendly interface.",
     imageUrl: "/project2.jpg",
     link: "https://cygnusau.com.au/",
     video: "/project-page5.MOV",

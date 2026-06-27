@@ -50,7 +50,7 @@ function ProjectsList() {
             </div>
           ))}
         <button
-          onClick={() => navigate("/web-development-service-srilanka")}
+          onClick={() => navigate("/web-development-projects")}
           className="w-fit text-sm font-medium tracking-wide text-white/90 hover:text-white transition-colors mt-1"
         >
           VIEW ALL

@@ -65,7 +65,7 @@ const HeroSection = () => {
             <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">Projects</h3>
             <p className="text-[10px] md:text-xs opacity-60 normal-case">Work Showcase</p>
           </TransitionLink>
-          <TransitionLink href="/services" className="space-y-1 group">
+          <TransitionLink href="/web-development-service-srilanka" className="space-y-1 group">
             <h3 className="text-[10px] md:text-sm font-bold leading-tight uppercase group-hover:text-orange-600 transition-colors">Services</h3>
             <p className="text-[10px] md:text-xs opacity-60 normal-case">What I Offer</p>
           </TransitionLink>

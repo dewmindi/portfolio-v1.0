@@ -4,17 +4,7 @@ import { usePageTransition } from "../components/PageTransition";
 import { featuredProjects } from "../../../projects";
 
 const siteUrl = "https://dewmindi.com";
-const pageUrl = `${siteUrl}/web-development-service-srilanka`;
-
-const projects = [
-  { name: "Ceylon Herbs E-commerce Website", slug: "ceylon-herbs", type: "WebApplication" },
-  { name: "Milano Cafe Bar Restaurant Website", slug: "milano-cafe-bar", type: "WebApplication" },
-  { name: "JR Global Pathways Consulting", slug: "jr-global-pathways", type: "WebApplication" },
-];
-
-
-
-// then spread projectUrls into the returned array above
+const pageUrl = `${siteUrl}/web-development-projects`;
 
 export default function WebDevClient() {
   const { navigate } = usePageTransition();
@@ -25,9 +15,9 @@ export default function WebDevClient() {
         {/* Top bar: title + close */}
         <div className="flex justify-between items-start shrink-0">
           <div className="flex items-baseline gap-2">
-            <h2 className="text-2xl md:text-4xl font-bold tracking-tight">
+            <h1 className="text-2xl md:text-4xl font-bold tracking-tight">
               All Projects
-            </h2>
+            </h1>
             <span className="text-sm md:text-base font-light text-white/50">
               ({featuredProjects.length})
             </span>
@@ -76,20 +66,65 @@ export default function WebDevClient() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "@id": pageUrl,
-            url: pageUrl,
-            name: "Web Development Projects - Dewmindi",
-            about: { "@id": `${siteUrl}/#person` },
-            mainEntity: {
-              "@type": "ItemList",
-              itemListElement: projects.map((p, i) => ({
-                "@type": "ListItem",
-                position: i + 1,
-                url: `${pageUrl}#${p.slug}`,
-                name: p.name,
-              })),
-            },
+            "@graph": [
+              {
+                "@type": ["CollectionPage", "WebPage"],
+                "@id": pageUrl,
+                url: pageUrl,
+                name: "Web Development Projects in Sri Lanka",
+                description:
+                  "A portfolio of web development and mobile app projects built by Dewmindi, a freelance web developer in Sri Lanka — including e-commerce platforms and business websites.",
+                inLanguage: "en",
+                isPartOf: { "@id": `${siteUrl}/#website` },
+                about: { "@id": `${siteUrl}/#person` },
+                breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+                mainEntity: { "@id": `${pageUrl}#projects` },
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": `${pageUrl}#breadcrumb`,
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: siteUrl,
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Web Development Service in Sri Lanka",
+                    item: `${siteUrl}/web-development-service-srilanka`,
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Web Development Projects",
+                    item: pageUrl,
+                  },
+                ],
+              },
+              {
+                "@type": "ItemList",
+                "@id": `${pageUrl}#projects`,
+                name: "Web Development Projects",
+                numberOfItems: featuredProjects.length,
+                itemListOrder: "https://schema.org/ItemListOrderAscending",
+                itemListElement: featuredProjects.map((project, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "WebSite",
+                    name: project.title.trim(),
+                    description: project.description.trim(),
+                    url: project.link,
+                    image: `${siteUrl}${project.imageUrl}`,
+                    author: { "@id": `${siteUrl}/#person` },
+                    mainEntityOfPage: `${siteUrl}/projects/${project.slug}`,
+                  },
+                })),
+              },
+            ],
           }),
         }}
       />

@@ -6,10 +6,10 @@ import { usePageTransition } from "./PageTransition";
 
 const menuLinks = [
   { label: "Home", href: "/" },
-  { label: "Works", href: "/web-development-service-srilanka" },
+  { label: "Projects", href: "/web-development-projects" },
   { label: "About", href: "/about" },
-  { label: "Process", href: "/#about-me" },
-  { label: "Services", href: "/services" },
+  { label: "Process", href: "/" },
+  { label: "Services", href: "/web-development-service-srilanka" },
   // { label: "Gallery", href: "/web-development-service-srilanka" },
 ];
 
